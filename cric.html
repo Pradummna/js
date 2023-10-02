@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<link rel="stylesheet" href="cric.css">
+
+<body>
+    <div class="bg-pic">
+    <center>
+        <h1 class="cric-head">Crick Stats.com</h1>
+    </center>
+
+    <div class="cric-box">
+        <p class="para">Choose a photo of the player</p>
+        <div class="getImg">
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <div class="from-box">
+            <div class="cric-input">
+                <input type="text" id="text"
+                    placeholder="Enter the player name and/or his stats against the team or events">
+
+                <input type="text" id="match" placeholder="Matches">
+
+                <input type="text" id="inn" placeholder="Innings">
+
+                <input type="text" id="runs" placeholder="Runs">
+
+                <input type="text" id="balls" placeholder="Balls">
+
+                <input type="text" id="fifty" placeholder="Fifties">
+
+                <input type="text" id="hundred" placeholder="Hundred">
+
+                <input type="text" id="best" placeholder="Best Score and/or Against ">
+
+                <input type="text" id="six" placeholder="Sixes">
+
+                <input type="text" id="fours" placeholder="Fours">
+
+                <input type="text" id="no" placeholder="Not Out">
+
+                <input type="text" id="mom" placeholder="Man of the Match">
+
+                <center><button id="sub-btn">Submit</button></center>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="bg-color">
+        <div class="cric-result">
+            <div class="showImg">
+                <img id="uploadedImage" src="">
+            </div>
+
+            <div class="input-result">
+                <div class="display-table">
+                    <table style="background-color: rgb(255, 252, 248); margin: 10px 0px;">
+                        <tr>
+                            <td class="data" colspan="2" id="img-data">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Matches</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Innings</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Runs</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Balls</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Strike Rate</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Average</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Fifties</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Hundreds</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Best Score</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Sixes</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Fours</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Not Outs</td>
+                            <td class="data"></td>
+                        </tr>
+                        <tr>
+                            <td>Man of the Matches</td>
+                            <td class="data"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="cric.js"></script>
+    
+</body>
+
+</html>
