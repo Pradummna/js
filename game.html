@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<link rel="stylesheet" href="game.css">
+
+<body>
+
+    <div class="game-details">
+        <h1>Rock, Paper and Sessior game</h1>
+        <p class="sp">Game Rules:</p>
+        <p>1. Write R or r to select Rock.</p>
+        <p>2. Write P or p to select Paper.</p>
+        <p>3. Write S or s to select Sessior.</p>
+
+    </div>
+
+    <div class="container-box">
+        <div class="game-box">
+            <div class="container">
+                <input type="text" id="input" placeholder="Enter R, P or S">
+                <br><br>
+                <center><button onclick="run()">Start</button>
+                    <button id="restart">Restart</button>
+                </center>
+            </div>
+
+            <div class="ani">
+                <p class="g" id="r">Rock</p>
+                <p class="g" id="p">Paper</p>
+                <p class="g" id="s">Sessior</p>
+            </div>
+
+            <div class="answer">
+                <center>
+                    <p id="ans"></p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function run() {
+
+            const ani1 = document.getElementById('r');
+            const ani2 = document.getElementById('p');
+            const ani3 = document.getElementById('s');
+
+            setTimeout(() => {
+                ani1.style.color = 'white';
+                ani1.style.display = 'block';
+            }, 2000)
+
+            setTimeout(() => {
+                ani2.style.color = 'white';
+                ani2.style.display = 'block';
+            }, 3000)
+
+            setTimeout(() => {
+                ani3.style.color = 'white';
+                ani3.style.display = 'block';
+            }, 4000)
+
+            const values = ['R', 'P', 'S'];
+            let game = true;
+
+            while (game) {
+                let comp = values[Math.floor(Math.random() * 3)];
+                let elem = document.getElementById('input');
+                let user = elem.value.toUpperCase();
+                let result = document.getElementById('ans');
+
+                if (user == comp) {
+                    setTimeout(() => {
+                        result.innerHTML = `Match Draw! ${user} and ${comp} has the same value`;
+                    }, 7000);
+                }
+
+                else if (user == 'R' && comp == 'S' || user == 'P' && comp == 'R' || user == 'S' && comp == 'P') {
+                    setTimeout(() => {
+                        result.innerHTML = `Huhreeey You Won! ${user} won against ${comp}`;
+                    }, 7000);
+                }
+
+                else if (user == 'R' && comp == 'P' || user == 'P' && comp == 'S' || user == 'S' && comp == 'R') {
+                    setTimeout(() => {
+                        result.innerHTML = `Sorry You lost! ${user} lose against ${comp}`;
+                    }, 7000);
+                }
+
+                else {
+                    setTimeout(() => {
+                        result.innerHTML = `Bhosdike, Abe tu thora behen ka loa hai kia. Ye dekh ( ${user} ) hai kia is ke andar ( ${values} ) dekh ( ${comp} ).`;
+                    }, 7000);
+                }
+
+                game = false;
+            }
+            setTimeout(() => {
+                result.innerHTML = '';
+            }, 1000 * 10);
+        }
+
+        const replay = document.getElementById('restart');
+        replay.addEventListener('click', () => {
+            location.reload();
+        });
+
+    </script>
+
+</body>
+
+</html>

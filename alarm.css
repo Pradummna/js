@@ -1,0 +1,52 @@
+
+body {
+    background: linear-gradient(90deg, rgb(27, 27, 27) 0%, rgb(61, 71, 73) 100%);
+    color: white;
+}
+
+.alarm-intro {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.body-block {
+    margin: 6% 0px;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    width: 25%;
+    border: 8px solid rgb(245, 240, 240);
+    border-radius: 14px;
+}
+
+.input-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.column option, select {
+    font-size: 16px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#btn {
+    background-color: rgb(44, 123, 187);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 8px;
+} 

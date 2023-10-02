@@ -1,0 +1,64 @@
+
+body {
+    background: linear-gradient(90deg, rgba(79,79,180,1) 0%, rgba(187,215,221,1) 100%);
+    color: white;
+}
+
+.box {
+    text-align: center;
+    margin: 14px 0px;
+}
+
+.c-box {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-lab {
+    font-size: 17px;
+}
+
+.s label {
+    font-size: 16px;
+}
+
+.generator {
+    display: flex;
+    justify-content: center;
+}
+
+/* input styling */
+
+#p_input {
+    width: 210px;
+}
+ 
+/* buttons styling */
+
+#sub-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.display_password button {
+    background-color: rgb(212, 88, 146);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+
+#gen {
+    padding: 6px 14px;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: rgba(236, 99, 49, 0.932);   
+    border: none;
+    border-radius: 5px;
+}
