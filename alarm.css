@@ -19,7 +19,8 @@ body {
 }
 
 .head {
-    width: 25%;
+    padding: 5px 20px;
+    width: max-contant;
     border: 8px solid rgb(245, 240, 240);
     border-radius: 14px;
 }
