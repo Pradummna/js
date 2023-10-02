@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+
+<link rel="stylesheet" href="guess.css">
+
+<body>
+
+<div class="details">
+    <h1>Guess Number</h1>
+    <p>Enter a number between 1 to 10 and see that your number is matching with computer or not</p>
+</div>
+
+<div class="main-div">
+        <div class="game-block">
+            <div class="input-box">
+                <input placeholder="Enter a number 1 to 10" id="guessInput">
+                <br><br>
+                <center><button onclick="run()">Submit</button>
+                <button onclick="cleartxt()">Clear</button></center>
+            </div>
+
+            <div class="res">
+
+            </div>
+        </div>
+</div>
+
+    <script>
+        let random = parseInt(Math.random() * 10) + 1;
+
+        function run() {
+            const elem = document.getElementById('guessInput');
+            const guess = parseInt(elem.value);
+            const ans = document.querySelector('.res');
+
+            if (isNaN(guess) || guess < 1 || guess > 10) {
+                alert('Invalid input. Please enter a number between 1 and 10.');
+            }
+
+            else if (guess > random) {
+                let para = document.createElement("p");
+                para.textContent = 'Enter a lower number';
+                ans.appendChild(para);
+            }
+
+            else if (guess < random) {
+                let para = document.createElement("p");
+                para.textContent = 'Enter a higher number';
+                ans.appendChild(para);
+            }
+
+            else {
+                let para = document.createElement("p");
+                para.textContent = `Eureka eureka. Your number ${guess} is matching with ${random}`;
+                ans.appendChild(para);
+            }
+
+        }
+        
+        function cleartxt() {
+            const elem = document.getElementById('guessInput');
+            elem.value = '';
+        }
+    </script>
+</body>
+
+</html>
