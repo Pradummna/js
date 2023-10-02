@@ -1,0 +1,83 @@
+/* main section */
+@media screen and (max-width: 600px) {
+    .intro h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Projects */
+@media screen and (max-width: 980px) {
+    .projects {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .projects {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .project-block {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .project-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .projects {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-block {
+        flex-direction: column;
+    }
+    .projects {
+        margin: auto;
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .projects {
+        margin: auto;
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .projects {
+        margin: auto;
+        width: 52%;
+    }
+}
+
+/* About */
+@media screen and (max-width: 800px) {
+    .about-txt {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .about-txt {
+        width: 100%;
+        padding: 6px 10px;
+    }
+}
