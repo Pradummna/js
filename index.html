@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index_res.css">
+
+<body>
+
+  <!-- top button -->
+  <button id="top-btn" onclick="up()" title="Go to top"><i class="fa fa-caret-up"></i></button>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <h1>Techxy</h1>
+    </div>
+    <div class="nav" style="z-index:99;">
+      <ul class="nav-menu" style="z-index:99;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!--Hero Section-->
+  <div class="main-div">
+    <div class="time-txt">
+    <h1>Current Time</h1>
+  </div>
+
+    <div class="clock">
+      <div class="clock-img">
+        <h1 id="time"></h1>
+      </div>
+    </div>
+
+    <div class="cen-intro">
+    <div class="intro">
+      <h1>Dear user you are welcome..</h1>
+    </div>
+  </div>
+  </div>
+  <hr>
+
+  <!--Projects-->
+  <section id="project"></section>
+  <div class="head">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="center-div">
+    <div class="project-block">
+
+      <div class="projects">
+        <div class="p-img">
+          <img src="pasword.jpeg" alt="">
+        </div>
+        <div class="p-link">
+          <a href="password.html">Password Generator</a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div class="p-img">
+          <img src="alarm.jpg" alt="">
+        </div>
+        <div class="p-link">
+          <a href="alarm.html">Alarm Clock</a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div class="p-img">
+          <img src="crick.jpeg" alt="">
+        </div>
+        <div class="p-link">
+          <a href="cric.html">Cricket Stats</a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div class="p-img">
+          <img src="rps.png" alt="">
+        </div>
+        <div class="p-link">
+          <a href="game.html">Rock, Paper and Sessior</a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div class="p-img">
+          <img src="guess number.png" alt="">
+        </div>
+        <div class="p-link">
+          <a href="guess.html">Guess Number</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr>
+
+  <!--About Section-->
+  <section id="about"></section>
+  <div class="head">
+    <h1>About</h1>
+  </div>
+
+  <div class="cen-div">
+    <div class="about-txt">
+      <p>Welcome to my portfolio of JavaScript projects! In the world of coding, JavaScript is the canvas through which
+        I bring my creative ideas to life. This collection of projects demonstrates my passion for programming and my
+        commitment to honing my skills. From crafting a Cricket Stats application to help cricket enthusiasts keep track
+        of their favorite players' performance to designing a robust Password Generator for enhanced security, I've
+        embarked on a journey of exploration and innovation. I've also ventured into the realm of fun and games,
+        building a Guess Number Game and a Rock, Paper, Scissors Game that challenge your wits and luck. Additionally,
+        I've created an Alarm Clock to ensure you never miss an important appointment. Each of these projects represents
+        a unique blend of problem-solving, user experience design, and, most importantly, my dedication to the art of
+        coding. Explore these projects to witness the world of possibilities that JavaScript can unlock!</p>
+    </div>
+  </div>
+  <hr>
+
+  <footer>
+    <p class="footer-txt">Designed and developed by @Techxy</p>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="clock.js"></script>
+
+</body>
+
+</html>
