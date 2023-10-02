@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url('cric-bg.jpg');
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+.cric-head {
+    font-size: 44px;
+}
+
+.bg-color {
+    margin-top: -14px;
+    color: black;
+}
+
+.para {
+    text-align: center;
+    font-size: 18px;
+}
+
+.getImg {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* input code */
+
+.from-box {
+    display: flex;
+    justify-content: center;
+}
+
+.cric-input {
+    margin-top: 12px;
+    width: 37%;
+}
+
+.cric-input input {
+    margin: 4px 0px;
+    width: 100%;
+    font-size: 14px;
+    padding: 3px 8px;
+}
+
+.cric-box {
+    margin-top: 22px;
+}
+
+/* result display design code */
+
+.cric-result {
+    margin-top: 14px;
+}
+
+.data {
+    text-align: center;
+}
+
+.showImg {
+   margin-top: 30px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.showImg img {
+    margin: 0px auto;
+    width: 22%;
+}
+
+.input-result {
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+}
+
+.display-table {
+    width: 42%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    display: none;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px 30px;
+    font-size: 15px;
+}
+
+#img-data {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding: 4px 16px;
+}
+
+/* submit button*/
+#sub-btn {
+    padding: 5px 10px;
+    font-size: 17px;
+    background-color: rgb(36, 196, 30);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* responsive code */
+@media screen and (max-width: 1000px) {
+    .cric-input {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cric-input {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cric-input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .cric-input {
+        width: 62%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cric-input {
+        width: 70%;
+    }
+}
+
+/* responsive code for table data */
+@media screen and (max-width: 640px) {
+
+    .display-table {
+        width: 100%;
+    }
+}
+
+/* responsive code for output image */
+@media screen and (max-width: 700px) {
+    .showImg img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .showImg img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .showImg img {
+        width: 60%;
+    }
+}
